@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "horde-events",
+  "version": "${version}",
+  "name": "Horde Events",
+  "description": "Random horde events that flood vanilla spawns with extra mobs of a type. Server-side only, players need nothing installed.",
+  "authors": ["Glance Studios"],
+  "license": "ARR",
+  "environment": "*",
+  "entrypoints": {
+    "server": ["mc.arch.hordes.HordeMod"]
+  },
+  "mixins": [
+    "horde-events.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.13"
+  }
+}
